@@ -103,13 +103,7 @@ const SavingsCalculator = () => {
       </form>
 
       {result && (
-        <div style={{ 
-          marginTop: '20px', 
-          padding: '15px', 
-          backgroundColor: '#ebf5fb', 
-          borderLeft: '5px solid #3498db',
-          fontWeight: 'bold'
-        }}>
+        <div className = "result">
           {result}
         </div>
       )}
@@ -124,7 +118,7 @@ const SavingsCalculator = () => {
           max="10" 
           value={feedback} 
           onChange={(e) => setFeedback(e.target.value)} 
-          style={{ width: '45px', marginLeft: '10px' }}
+          style={{ width: '1.5rem', height: "1.5rem", marginLeft: '10px', textAlign: "center" }}
         />
         <button 
           onClick={() => console.log("User Rating:", feedback)}
