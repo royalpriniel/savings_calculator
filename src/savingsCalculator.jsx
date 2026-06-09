@@ -49,7 +49,7 @@ const SavingsCalculator = () => {
           <input 
             type="text" 
             placeholder="e.g. USD, NGN, EUR"
-            value={currency} 
+            value={currency}
             onChange={(e) => setCurrency(e.target.value)} 
             style={{ width: '100%', padding: '8px', marginTop: '5px' }}
             required 
@@ -63,7 +63,7 @@ const SavingsCalculator = () => {
           <input 
             type="text" 
             placeholder="Enter income"
-            value={incomeInput} 
+            value={incomeInput.toLocaleString('en-US')}
             onChange={(e) => setIncomeInput(e.target.value)} 
             style={{ width: '100%', padding: '8px', marginTop: '5px' }}
             required 
